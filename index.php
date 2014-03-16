@@ -256,7 +256,7 @@
 				
 				//function to hide the content
 				function hideContent(){
-					$('#cc_content').find('div').hide();
+					$('#cc_content').find('div[class*=cc_content]').hide();  //div[class*=cc_content] toto vyhlada elementy ktorych attr ma v sebe cc_content a schova ich, pretoze iba DIV skova aj vsetky div vo vnutri tych cc_content
 					}
 
 					$('#cc_back').click(function(){
